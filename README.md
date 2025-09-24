@@ -1,11 +1,23 @@
 <<<<<<< HEAD
-# dowerly
+# intro screen template
 
 A new Flutter project.
 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+
+## Screenshots: 
+![intro one](lib/screenshots/photo_2025-09-24_01-39-28.jpg)
+
+![intro two](lib/screenshots/photo_2025-09-24_01-41-21.jpg)
+
+![intro three](lib/screenshots/photo_2025-09-24_01-41-35.jpg)
+
+![Login](lib/screenshots/photo_2025-09-24_01-41-44.jpg)
+
+![Account type](lib/screenshots/photo_2025-09-24_01-37-57.jpg)
+
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -16,7 +28,6 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 =======
-# dowerly-app
 
 
 
