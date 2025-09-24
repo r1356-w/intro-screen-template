@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             builder: (context, state) {
               return MaterialApp(
                 useInheritedMediaQuery: true,
-                locale: const Locale('ar', ''), // إجبار اللغة العربية
+                locale: const Locale('ar', ''),
                 builder: DevicePreview.appBuilder,
                 theme: state.themeData,
                 title: 'Dowerly',
@@ -43,12 +43,8 @@ class MyApp extends StatelessWidget {
                   GlobalWidgetsLocalizations.delegate,
                   GlobalCupertinoLocalizations.delegate,
                 ],
-                supportedLocales: const [
-                  Locale('ar', ''), // العربية
-                  Locale('en', 'US'), // الإنجليزية
-                ],
+                supportedLocales: const [Locale('ar', ''), Locale('en', 'US')],
                 localeResolutionCallback: (deviceLocale, supportedLocales) {
-                  // إرجاع العربية إذا كانت مدعومة، وإلا الإنجليزية
                   return supportedLocales.firstWhere(
                     (locale) =>
                         locale.languageCode == deviceLocale?.languageCode,

@@ -18,31 +18,29 @@ class ErrorMapWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.error_outline, color: Colors.red, size: 10.h),
-          SizedBox(height: 2.h),
+          Icon(Icons.error_outline, color: Colors.red, size: 40),
+          SizedBox(height: 8),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 5.h),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               message,
-              style: theme.textTheme.bodyMedium,
+              style: TextStyle(fontSize: 16, color: Colors.black),
               textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(height: 3.h),
+          SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: onRetry,
             icon: const Icon(Icons.refresh),
             label: const Text("إعادة المحاولة"),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: appTheme.greenA700,
-            ),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
           ),
-          if (message.contains('الإعدادات')) SizedBox(height: 2.h),
+          if (message.contains('الإعدادات')) SizedBox(height: 8),
           ElevatedButton.icon(
             onPressed: openAppSettings,
             icon: const Icon(Icons.settings),
             label: const Text("فتح الإعدادات"),
-            style: ElevatedButton.styleFrom(backgroundColor: appTheme.blue800),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
           ),
         ],
       ),
